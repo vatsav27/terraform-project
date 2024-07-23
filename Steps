@@ -1,0 +1,14 @@
+Steps for creating our website on AWS using Terraform:
+1.	Creating an s3 bucket: We can start by creating an s3 bucket, and the bucket's name has to be globally unique.
+2.	Configuring bucket for static website hosting: In the s3 bucket properties, enable static website hosting and specify the default index document (Eg: index.html) and optional document (eg: error.html document)
+3.	Upload website files:  upload your static website files (HTML, CSS, JavaScript, images) to the s3 bucket. Set appropriate permissions (Eg: public-read) for the objects to make them publicly accessible.
+4.	Enable public access: allow public access to the s3 buckets and their objects by configuring the bucket policy or access control lists (ACLs).
+5.	Configure DNS(OPTIONAL): If you want to use a custom domain for your website you can use route53 or any other DNS provider to set the record., This step is optional if you are using the default s3 website endpoint.
+6.	Testing: Once the setup is done, we can test your static website by accessing through the s3 bucket website URL or your custom domain.
+In main.tf file:
+1.	Here I initially changed the bucket ownership controls so that the owner should own everything on the bucket. Then I made the bucket public.
+2.	Then I added ACLs to prepare the bucket for the website.
+3.	The next step is enabling static website hosting.
+4.	This step requires index.html and error.html files. I created index.html, and error.html files for our websites.
+5.	I added their resources in the main.tf. The next step is enabling hosting.
+6.	I added a resource for it also.
