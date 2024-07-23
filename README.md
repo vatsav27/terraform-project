@@ -1,6 +1,6 @@
-# terraform-project
+# Terraform-Project
 
-Project Images:
+Project images:
 ![Screenshot (566)](https://github.com/user-attachments/assets/3e324214-43be-4f3b-b2bd-4f78f7ec65a0)
 ![Screenshot (567)](https://github.com/user-attachments/assets/2edb9ec2-7389-401c-9d83-43cd742b427d)
 ![Screenshot (568)](https://github.com/user-attachments/assets/4fa77201-6164-4e64-9cf7-01f1a9226d29)
